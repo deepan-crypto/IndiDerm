@@ -1,0 +1,18 @@
+{
+  "name": "idemdrem",
+  "description": "Idemdrem — AI-Powered Skin Disease Detection by LogiDevs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^1.8.3",
+    "html2canvas": "^1.4.1",
+    "html2pdf": "^0.0.11",
+    "jspdf": "^3.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "LogiDevs",
+  "license": "ISC"
+}
