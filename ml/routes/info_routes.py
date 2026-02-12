@@ -1,9 +1,6 @@
 import logging
 from logging.handlers import RotatingFileHandler
-<<<<<<< HEAD
 from pathlib import Path
-=======
->>>>>>> c911b1f5c55abbeacb318489aca473046479c071
 from fastapi import APIRouter, HTTPException, Request
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel, ValidationError
@@ -14,13 +11,10 @@ from apis.nearby_hospitals_api import get_nearby_hospitals
 from apis.gemini_api import gemini
 
 # Centralized logging setup
-<<<<<<< HEAD
 # Create logs directory if it doesn't exist
 log_dir = Path("logs")
 log_dir.mkdir(exist_ok=True)
 
-=======
->>>>>>> c911b1f5c55abbeacb318489aca473046479c071
 handler = RotatingFileHandler("logs/app.log", maxBytes=1_000_000, backupCount=5)
 handler.setFormatter(logging.Formatter("%(asctime)s [%(levelname)s] %(message)s"))
 logger = logging.getLogger("info_logger")
